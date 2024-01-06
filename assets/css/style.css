@@ -1,0 +1,106 @@
+/**
+* Designed by Denis Januzi
+* Updated: Jan 06 2024
+* Time: 15:30 Pm
+* Author: Denis Januzi
+* License: denis.cilesi.com
+*/
+
+/*--------------------------------------------------------------
+# Genral Styling
+--------------------------------------------------------------*/
+
+:root {
+  /*Font Family */
+
+  --font-default: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-secondary: "arial", sans-serif;
+
+  /* Font Size */
+
+  /* Font Weight */
+
+  /* Font Color */
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-default);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header img {
+  display: block;
+  width: 320px;
+  height: 320px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  width: 100%;
+  row-gap: 4rem;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+}
+
+p {
+  font-size: clamp(0.9rem, 5vw, 1.2rem);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0rem 0rem 0rem;
+  width: 100%;
+  height: auto;
+}
+
+#city {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  font-size: clamp(1.3rem, 5vw, 1.7rem);
+}
+
