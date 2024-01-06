@@ -105,12 +105,11 @@ footer {
 
 @media screen and (max-width: 768px) {
   body {
-    height: auto;
 
   }
   header img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
   }
 }
 
