@@ -72,12 +72,13 @@ section {
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .sectionDvs {
-  padding: 2rem 0;
+  padding: 1rem 0 2rem 0;
   height: auto;
+  width: 100%;
 }
 
 h1 {
