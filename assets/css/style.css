@@ -117,7 +117,7 @@ footer {
 }
 
 #city {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -125,7 +125,9 @@ footer {
   outline: none;
   background-color: transparent;
   font-size: var(--font-size-default);
+  position: relative;
 }
+
 
 /* Media Queries */
 
