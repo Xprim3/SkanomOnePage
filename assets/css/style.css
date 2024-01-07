@@ -18,6 +18,11 @@
 
   /* Font Size */
 
+  --font-size-default: 1rem;
+  --font-size-small: 0.8;
+  --font-size-large: 1.1rem;
+  
+
   /* Font Weight */
 
   /* Font Color */
@@ -33,6 +38,7 @@
 a {
   color: black;
   text-decoration: none;
+  transition: color 0.2s, opacity 0.2s;
 }
 
 p, h1 {
@@ -87,7 +93,7 @@ section {
 }
 
 h1 {
-  font-size: 1.2rem;
+  font-size: var(--font-size-large);
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
@@ -95,7 +101,7 @@ h1 {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: var(--font-size-small);
 }
 
 footer {
@@ -107,20 +113,92 @@ footer {
   width: 100%;
   column-gap: 8px;
   height: auto;
+  font-size: var(--font-size-default);
 }
 
 #city {
   padding: 1rem 2rem;
   border: none;
   outline: none;
-  font-size: 0.8rem;
+  background-color: none;
+  font-size: var(--font-size-default);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 319px) {
   header img {
     width: 180px;
     height: 180px;
   }
 
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  #city {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media screen and (min-width: 424px) {
+  header img {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #city {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 624px) {
+  header img {
+    width: 250px;
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  #city {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+a:hover {
+  color: crimson;
+  opacity: 0.5;
 }
 
