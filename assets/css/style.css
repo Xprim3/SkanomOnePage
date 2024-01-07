@@ -125,7 +125,7 @@ footer {
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: crimson;
+  border-bottom-color: #f58220;
   outline: none;
   background-color: transparent;
   font-size: var(--font-size-default);
@@ -211,7 +211,7 @@ footer {
 
 
 a:hover {
-  color: crimson;
+  color: #f58220;
   opacity: 0.5;
 }
 
