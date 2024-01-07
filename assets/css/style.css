@@ -122,12 +122,8 @@ footer {
 
 #city {
   padding: 1rem 3rem;
-  border: none;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #f58220;
   outline: none;
-  background-color: transparent;
+  border: none;;
   font-size: var(--font-size-default);
   font-weight: var(--font-weight-default);
   position: relative;

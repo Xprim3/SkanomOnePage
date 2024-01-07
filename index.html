@@ -39,7 +39,7 @@
       <img src="/properPiza.png" alt="Bussines Logo">
     </header>
     <!-- END -->
-    
+
     <!--Main Section -->
     <section>
       <div class="sectionDvs">
@@ -49,12 +49,12 @@
         </div>
       </div>
       <div class="sectionDvs">
-        <select name="city" id="city">
-          <option value="pr">Prishtine</option>
-          <option value="gj">Gjilan</option>
+        <select name="city" id="city" onchange="redirectToLink()">
+          <option value="" selected disabled>Cilin qytet?</option>
+          <option value="fr">Ferizaj</option>
+          <option value="pr">Prishtina</option>
           <option value="pz">Prizren</option>
           <option value="gjk">Gjakove</option>
-          <option value="fr">Ferizaj</option>
         </select>
       </div>
     </section>
@@ -87,7 +87,15 @@
 
 
 
-
+    <script>
+      function redirectToLink() {
+        var selectedValue = document.getElementById('city').value;
+        if (selectedValue === 'fr') {
+          var link = 'https://skanom.com/properpizza?city=fr';
+          window.location.href = link;
+        }
+      }
+    </script>
 
     <script type="module" src="main.js"></script>
   </body>
