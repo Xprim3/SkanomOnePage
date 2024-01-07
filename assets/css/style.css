@@ -215,3 +215,26 @@ a:hover {
   opacity: 0.5;
 }
 
+
+/* Social Network Styling */
+
+.SocialNetworkBox {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* END */
