@@ -87,7 +87,7 @@ section {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
@@ -95,7 +95,7 @@ h1 {
 }
 
 p {
-  font-size: clamp(0.7rem, 5vw, 1.1rem);
+  font-size: 0.8rem;
 }
 
 footer {
@@ -113,13 +113,13 @@ footer {
   padding: 1rem 2rem;
   border: none;
   outline: none;
-  font-size: clamp(1.3rem, 5vw, 1.7rem);
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 768px) {
   header img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
 }
