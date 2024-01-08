@@ -45,16 +45,18 @@
       <div class="sectionDvs">
         <div>
           <h1>Proper Pizza</h1>
-          <p>Discover restaurants and more near you.</p>
+          <p>Mirë se vini, ju bëftë mirë, e hajdeni prap !!!</p>
         </div>
       </div>
       <div class="sectionDvs">
         <select name="city" id="city" onchange="redirectToLink()">
           <option value="" selected disabled>Cilin qytet?</option>
-          <option value="fr">Ferizaj</option>
           <option value="pr">Prishtina</option>
+          <option value="fr">Ferizaj</option>
+          <option value="gl">Gjilan</option>
+          <option value="mrc">Mitrovic</option>
+          <option value="pj">Peja</option>
           <option value="pz">Prizren</option>
-          <option value="gjk">Gjakove</option>
         </select>
       </div>
     </section>
@@ -78,10 +80,30 @@
     <script>
       function redirectToLink() {
         var selectedValue = document.getElementById('city').value;
-        if (selectedValue === 'fr') {
-          var link = 'https://skanom.com/properpizza?city=fr';
-          window.location.href = link;
+        var link;
+        switch(selectedValue) {
+          case 'pr':
+            link = 'https://skanom.com/properpizzapr';
+            break;
+          case 'fr':
+            link = 'https://skanom.com/properpizzafr';
+            break;
+          case 'gl':
+            link = 'https://skanom.com/properpizzagl';
+            break;
+          case 'mrc':
+            link = 'https://skanom.com/properpizzamitrovic';
+            break;
+          case 'pj':
+            link = 'https://skanom.com/properpizzapeje';
+            break;
+          case 'pz':
+            link = 'https://skanom.com/properpizzapz';
+            break;
+          default:
+            link = 'https://skanom.com/properpizza';
         }
+        window.location.href = link;
       }
     </script>
 
